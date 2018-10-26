@@ -5,14 +5,14 @@ app中的社交功能通常需要实现新浪微博输入“@名字”时高亮�
 - 非文字字符间隔终止高亮
 
 ##### 效果图
-![@名字高亮效果图](https://upload-images.jianshu.io/upload_images/1802898-a8caba678cd67125.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![@名字高亮效果图](https://github.com/tom555cat/pictures/raw/master/Simulator%20Screen%20Shot%20-%20iPhone%20XS%20Max%20-%202018-10-26%20at%2018.15.51.png)
 
 
 
 
 ##### 背景知识
 通过TextKit来实现这一功能，看一下TextKit的结构[[1]][1]:
-![TextKit结构图](https://upload-images.jianshu.io/upload_images/1802898-77e7339bb4a08da3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![TextKit结构图](https://raw.githubusercontent.com/tom555cat/pictures/master/TextKit-395e9e4e.png)
 
 ###### NSTextStorage
 按照MVC的思路，NSTextStorage属于Model范畴。NSTextStorage继承自NSMutableAttributed，保存了text和text的attributes；NSTextStorage与NSMutableAttributed的区别在于当自己的内容发生变化时会发出通知。
